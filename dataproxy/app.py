@@ -220,8 +220,8 @@ class OurEncoder(json.JSONEncoder):
 def transform(type_name, flow, url, query, max_results):
     # window size is the number of rows that are pre-fetched and analysed
     window = min(max_results, 256)
-    encoding = None
-    guess_types = True
+    encoding = 'utf8'
+    guess_types = False
     if 'guess-types' in query:
         guess_types = query['guess-types'].lower() in ('yes', 'true', '1', 't', 'enabled')
     if 'encoding' in query:

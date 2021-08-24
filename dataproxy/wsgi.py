@@ -8,8 +8,13 @@ if __name__ == "__main__":
     application.run()
 
 
+@application.route('/hello')
+def hello():
+    return 'Hello!'
+
+
 @application.route('/')
-def hello_world():
+def _index():
     url = request.args.get("url")
     flow = _get_flow_parameters()
     proxy = JsonpDataProxy(3000000)

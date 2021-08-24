@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../OpenDataset/.idea/OpenDataset.iml" filepath="$PROJECT_DIR$/../OpenDataset/.idea/OpenDataset.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/dataproxy.iml" filepath="$PROJECT_DIR$/.idea/dataproxy.iml" />
     </modules>
   </component>
